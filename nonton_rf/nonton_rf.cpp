@@ -9,6 +9,7 @@ struct Product {
     std::string name;
 };
 
+
 class ProductsImpl {
 
 public:
@@ -41,7 +42,7 @@ public:
         std::vector<std::string> names;
         for(auto &product: bucket) {
             if(product.second == name) {
-                names.push_back(name);
+                names.push_back(product.first);
             }
         }
         return names;
