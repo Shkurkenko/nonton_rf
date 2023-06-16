@@ -9,7 +9,6 @@ struct Product {
     std::string name;
 };
 
-
 class ProductsImpl {
 
 public:
